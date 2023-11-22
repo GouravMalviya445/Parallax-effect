@@ -1,0 +1,136 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ html, body{
+    height: 100%;
+    width: 100%;
+ }
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    /* overflow-y: auto; */
+    perspective: 10px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transform-style: preserve-3d;
+    z-index: -1;
+    
+}
+
+.background{
+    transform: translateZ(-45px) scale(6);
+}
+
+.front{
+    transform: translateZ(-20px) scale(3);
+}
+
+.background,.front{
+    position: absolute;
+    height: 100%;
+    flex-basis: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.sec{
+    background-color: black;
+    
+}
+
+h1{
+    position: absolute;
+    bottom: 6rem;
+    /* left: 31%; */
+    /* transform: translateX(-50%); */
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: 2px;
+    font-size: 4.6rem;
+    /* color: rgba(98, 121, 16, 0.918); */
+    color: rgb(221, 149, 14);
+    text-shadow: 0 0 4px rgb(14, 3, 3);
+    /* text-shadow: 0 0 3px rgba(236, 146, 11, 0.925) */
+} 
+
+section{
+    background-color: rgb(13, 5, 58);
+    color: rgb(255, 255, 255);
+    padding: 5rem 0;
+    background-image: linear-gradient(rgb(13, 5, 58),rgba(46, 18, 2, 0.507));
+}
+
+.secheading{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-size: 3rem;
+    padding: 0 10rem
+}
+
+
+
+.text{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1rem;
+    padding: 0 10rem;
+    margin: 2rem 0;
+}
+
+.bg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.desc{
+    position: absolute;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-size: 3.2rem;
+    color: rgb(240, 159, 8);
+    text-shadow: 0 0  4px black;
+}
+
+.bg1{
+    background-image: url(Naruto-scaled.webp);
+}
+
+.bg2{
+    background-image: url(kakashi\ vs\ paiin.webp);
+}
+
+.bg3{
+    background-image: url(team.webp);
+}
+
+#foot{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    position: relative;
+    top: 2rem;
+    color: rgb(226, 59, 3);
+    font-size: 30px;
+    transform: translateX(26%);
+}
+
+
+
+
